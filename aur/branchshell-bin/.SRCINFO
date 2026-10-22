@@ -1,0 +1,26 @@
+pkgbase = branchshell-bin
+	pkgdesc = SSH client and BranchBay's terminal
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://branchbay.dev/branchshell
+	arch = x86_64
+	arch = aarch64
+	license = LicenseRef-Proprietary
+	depends = dbus
+	depends = gcc-libs
+	depends = libxcb
+	depends = libxkbcommon
+	depends = libxkbcommon-x11
+	depends = zlib
+	optdepends = vulkan-icd-loader: GPU rendering
+	optdepends = wayland: Wayland sessions
+	provides = branchshell
+	conflicts = branchshell
+	conflicts = branchshell-bin
+	conflicts = branchshell-beta-bin
+	source_x86_64 = branch-shell-1.0.0-linux-x86_64.tar.gz::https://releases.branchbay.dev/branchshell/releases/1.0.0/branch-shell-1.0.0-linux-x86_64.tar.gz
+	sha256sums_x86_64 = b4e439f25e76f02407a8e4ae18dc20ed4cd450f281670b293971e6e0cd3ef421
+	source_aarch64 = branch-shell-1.0.0-linux-aarch64.tar.gz::https://releases.branchbay.dev/branchshell/releases/1.0.0/branch-shell-1.0.0-linux-aarch64.tar.gz
+	sha256sums_aarch64 = ce9da2db7ae340d1194073c5f7242390d7c4471544d486bc6877ac6b249f237f
+
+pkgname = branchshell-bin

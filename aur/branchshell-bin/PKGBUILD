@@ -1,0 +1,29 @@
+# Maintainer: BranchShell <contact@branchbay.dev>
+pkgname=branchshell-bin
+_version=1.0.0
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="SSH client and BranchBay's terminal"
+arch=('x86_64' 'aarch64')
+url="https://branchbay.dev/branchshell"
+license=('LicenseRef-Proprietary')
+depends=('dbus' 'gcc-libs' 'libxcb' 'libxkbcommon' 'libxkbcommon-x11' 'zlib')
+optdepends=('vulkan-icd-loader: GPU rendering'
+            'wayland: Wayland sessions')
+provides=('branchshell')
+conflicts=('branchshell' 'branchshell-bin' 'branchshell-beta-bin')
+source_x86_64=("branch-shell-${_version}-linux-x86_64.tar.gz::https://releases.branchbay.dev/branchshell/releases/${_version}/branch-shell-${_version}-linux-x86_64.tar.gz")
+source_aarch64=("branch-shell-${_version}-linux-aarch64.tar.gz::https://releases.branchbay.dev/branchshell/releases/${_version}/branch-shell-${_version}-linux-aarch64.tar.gz")
+sha256sums_x86_64=('b4e439f25e76f02407a8e4ae18dc20ed4cd450f281670b293971e6e0cd3ef421')
+sha256sums_aarch64=('ce9da2db7ae340d1194073c5f7242390d7c4471544d486bc6877ac6b249f237f')
+
+package() {
+  cd "branch-shell-${_version}-linux-${CARCH}"
+  install -Dm755 branch-shell "${pkgdir}/usr/bin/branch-shell"
+  install -Dm644 branchshell.desktop "${pkgdir}/usr/share/applications/branchshell.desktop"
+  local size
+  for size in 32 48 128 256 512; do
+    install -Dm644 "icons/hicolor/${size}x${size}/apps/branchshell.png" \
+      "${pkgdir}/usr/share/icons/hicolor/${size}x${size}/apps/branchshell.png"
+  done
+}
