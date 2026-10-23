@@ -5,7 +5,7 @@ class Branchshell < Formula
   # `depends_on :linux` then refuses it.
   url "https://releases.branchbay.dev/branchshell/releases/1.0.0/branch-shell-1.0.0-linux-x86_64.tar.gz"
   version "1.0.0"
-  sha256 "b4e439f25e76f02407a8e4ae18dc20ed4cd450f281670b293971e6e0cd3ef421"
+  sha256 "da0139bfda1362b55bd90a71a952362f451a58c4ae7f525df390c817c476a078"
   license :cannot_represent
 
   depends_on "dbus"
@@ -16,7 +16,7 @@ class Branchshell < Formula
   on_linux do
     on_arm do
       url "https://releases.branchbay.dev/branchshell/releases/1.0.0/branch-shell-1.0.0-linux-aarch64.tar.gz"
-      sha256 "ce9da2db7ae340d1194073c5f7242390d7c4471544d486bc6877ac6b249f237f"
+      sha256 "7ff7e9f24c0f25dc80edaf9be9575f55d1838f1e54a777105f0e6ea8d1562179"
     end
   end
 

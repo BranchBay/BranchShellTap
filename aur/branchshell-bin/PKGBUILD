@@ -14,8 +14,8 @@ provides=('branchshell')
 conflicts=('branchshell' 'branchshell-bin' 'branchshell-beta-bin')
 source_x86_64=("branch-shell-${_version}-linux-x86_64.tar.gz::https://releases.branchbay.dev/branchshell/releases/${_version}/branch-shell-${_version}-linux-x86_64.tar.gz")
 source_aarch64=("branch-shell-${_version}-linux-aarch64.tar.gz::https://releases.branchbay.dev/branchshell/releases/${_version}/branch-shell-${_version}-linux-aarch64.tar.gz")
-sha256sums_x86_64=('b4e439f25e76f02407a8e4ae18dc20ed4cd450f281670b293971e6e0cd3ef421')
-sha256sums_aarch64=('ce9da2db7ae340d1194073c5f7242390d7c4471544d486bc6877ac6b249f237f')
+sha256sums_x86_64=('da0139bfda1362b55bd90a71a952362f451a58c4ae7f525df390c817c476a078')
+sha256sums_aarch64=('7ff7e9f24c0f25dc80edaf9be9575f55d1838f1e54a777105f0e6ea8d1562179')
 
 package() {
   cd "branch-shell-${_version}-linux-${CARCH}"
