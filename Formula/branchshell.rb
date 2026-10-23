@@ -3,9 +3,9 @@ class Branchshell < Formula
   homepage "https://branchbay.dev/branchshell"
   # A URL outside any block, so the formula loads on macOS too, where
   # `depends_on :linux` then refuses it.
-  url "https://releases.branchbay.dev/branchshell/releases/1.0.0/branch-shell-1.0.0-linux-x86_64.tar.gz"
-  version "1.0.0"
-  sha256 "da0139bfda1362b55bd90a71a952362f451a58c4ae7f525df390c817c476a078"
+  url "https://releases.branchbay.dev/branchshell/releases/1.0.1/branch-shell-1.0.1-linux-x86_64.tar.gz"
+  version "1.0.1"
+  sha256 "876592630f6f6f39c22230fcb4b64edb31ad0dd758bac322466ea091fe2b320d"
   license :cannot_represent
 
   depends_on "dbus"
@@ -15,8 +15,8 @@ class Branchshell < Formula
 
   on_linux do
     on_arm do
-      url "https://releases.branchbay.dev/branchshell/releases/1.0.0/branch-shell-1.0.0-linux-aarch64.tar.gz"
-      sha256 "7ff7e9f24c0f25dc80edaf9be9575f55d1838f1e54a777105f0e6ea8d1562179"
+      url "https://releases.branchbay.dev/branchshell/releases/1.0.1/branch-shell-1.0.1-linux-aarch64.tar.gz"
+      sha256 "126882a14dcc3b88095d72cfcf1ba5eefc1ed75095917b7ae98b499143e6a105"
     end
   end
 
