@@ -3,11 +3,11 @@
   "systems": {
     "aarch64-darwin": {
       "url": "https://releases.branchbay.dev/branchshell/releases/1.0.0/BranchShell-1.0.0-macos-aarch64.app.zip",
-      "hash": "sha256-unA+Wd//ZWLcOPLzKzCKTUrcaNewZTm826zfQoVrO/U="
+      "hash": "sha256-BdwNN+3TDSGbiskGjaGtDh6Zb+yerv1OGMJuMb3fqro="
     },
     "x86_64-darwin": {
       "url": "https://releases.branchbay.dev/branchshell/releases/1.0.0/BranchShell-1.0.0-macos-x86_64.app.zip",
-      "hash": "sha256-9JmrG+sST9wW0shOrS2H0TUX4fxYsygRFG4UFee9E14="
+      "hash": "sha256-h60HI5geLTPC4AXEltJgnBA8IM/DBRJA5qDRj3x52m0="
     },
     "x86_64-linux": {
       "url": "https://releases.branchbay.dev/branchshell/releases/1.0.0/branch-shell-1.0.0-linux-x86_64.tar.gz",
