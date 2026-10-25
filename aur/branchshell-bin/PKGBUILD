@@ -1,7 +1,7 @@
 # Maintainer: BranchShell <contact@branchbay.dev>
 pkgname=branchshell-bin
-_version=1.0.1
-pkgver=1.0.1
+_version=1.0.2
+pkgver=1.0.2
 pkgrel=1
 pkgdesc="SSH client and BranchBay's terminal"
 arch=('x86_64' 'aarch64')
@@ -14,8 +14,8 @@ provides=('branchshell')
 conflicts=('branchshell' 'branchshell-bin' 'branchshell-beta-bin')
 source_x86_64=("branch-shell-${_version}-linux-x86_64.tar.gz::https://releases.branchbay.dev/branchshell/releases/${_version}/branch-shell-${_version}-linux-x86_64.tar.gz")
 source_aarch64=("branch-shell-${_version}-linux-aarch64.tar.gz::https://releases.branchbay.dev/branchshell/releases/${_version}/branch-shell-${_version}-linux-aarch64.tar.gz")
-sha256sums_x86_64=('876592630f6f6f39c22230fcb4b64edb31ad0dd758bac322466ea091fe2b320d')
-sha256sums_aarch64=('126882a14dcc3b88095d72cfcf1ba5eefc1ed75095917b7ae98b499143e6a105')
+sha256sums_x86_64=('2ebfb5b9e8e1c6c9971f7d7351adf723c2d38b50fa89da512b42651adf4a5ddd')
+sha256sums_aarch64=('ba2a75206d301202451e9da3a01d4a7dc3b3464d74ee50ca357f1cf96ddef8d1')
 
 package() {
   cd "branch-shell-${_version}-linux-${CARCH}"
