@@ -1,6 +1,6 @@
 pkgbase = branchshell-bin
 	pkgdesc = SSH client and BranchBay's terminal
-	pkgver = 1.0.3
+	pkgver = 1.0.4
 	pkgrel = 1
 	url = https://branchbay.dev/branchshell
 	arch = x86_64
@@ -18,9 +18,9 @@ pkgbase = branchshell-bin
 	conflicts = branchshell
 	conflicts = branchshell-bin
 	conflicts = branchshell-beta-bin
-	source_x86_64 = branch-shell-1.0.3-linux-x86_64.tar.gz::https://releases.branchbay.dev/branchshell/releases/1.0.3/branch-shell-1.0.3-linux-x86_64.tar.gz
-	sha256sums_x86_64 = a48f55ce9c175f23525863eb6cbd791efd00ac5322fa6acd153469c0af64fd2f
-	source_aarch64 = branch-shell-1.0.3-linux-aarch64.tar.gz::https://releases.branchbay.dev/branchshell/releases/1.0.3/branch-shell-1.0.3-linux-aarch64.tar.gz
-	sha256sums_aarch64 = a6b5f77800dcb6709c6c2a2cf29caf8105552c85f95dd474f3a570bc3f22a595
+	source_x86_64 = branch-shell-1.0.4-linux-x86_64.tar.gz::https://releases.branchbay.dev/branchshell/releases/1.0.4/branch-shell-1.0.4-linux-x86_64.tar.gz
+	sha256sums_x86_64 = 6fc18ab94b0435f2f60f53418dd6b70c8e3b861ca84846dbc33a1fa6c8132e7c
+	source_aarch64 = branch-shell-1.0.4-linux-aarch64.tar.gz::https://releases.branchbay.dev/branchshell/releases/1.0.4/branch-shell-1.0.4-linux-aarch64.tar.gz
+	sha256sums_aarch64 = b566088f6e47db93e504f3ad8326407baec3242d66cc4869f80c7bb88d4512c8
 
 pkgname = branchshell-bin
