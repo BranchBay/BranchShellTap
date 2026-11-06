@@ -1,9 +1,9 @@
 cask "branchshell" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "1.0.4"
-  sha256 arm:   "950d8b701e260053410e0ae3c1391c4a514f6c955e094f9d3dddbbdff13ebe39",
-         intel: "acc8aac4fe72a1d7ba855fa1c0202c28322c7c9cf64aaafee5ce8202b86fab31"
+  version "1.0.5"
+  sha256 arm:   "b57875ed45498e32486fd126fadbaf9a881b543d57d441aec3965bc6929e25d5",
+         intel: "484ad544262f7d2b94107dde633fcc9804a27671c32fbc40360258224d444e19"
 
   url "https://releases.branchbay.dev/branchshell/releases/#{version}/branch-shell-#{version}-macos-#{arch}.dmg"
   name "BranchShell"
